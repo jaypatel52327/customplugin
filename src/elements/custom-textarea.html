@@ -1,0 +1,21 @@
+<template>
+    <require from="./custom-textboxarea.css"></require>
+    <form submit.delegate="submit()" >
+        <div class="form-group" >
+        <textarea class="form-control ${classes}"
+        name.bind="name"
+        placeholder.bind="placeholder"
+        autofocus.bind="autofocus"
+        cols.bind="cols"
+        rows.bind="rows"
+        disabled.bind="disabled"
+        maxlength.bind="maxlength"
+        readonly.bind="readonly"
+        required.bind="required"
+        wrap.bind="wrap"
+                spellcheck.bind="spellcheck" autocomplete.bind="on"  
+                value.bind="textValue & validateOnChangeOrBlur">
+      </div>
+      </form>
+  </template>
+  
